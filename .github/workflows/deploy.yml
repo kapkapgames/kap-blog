@@ -1,7 +1,7 @@
 name: Deploy Jekyll with Tailwind v4
 on:
   push:
-    branches: ["master"] # Or "master" depending on your default branch name
+    branches: ["master"]
 
 permissions:
   contents: read
@@ -29,7 +29,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2' # Adjust to your local ruby version
+          ruby-version: '3.2'
           bundler-cache: true
 
       - name: Setup Pages
