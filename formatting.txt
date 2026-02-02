@@ -1,0 +1,14 @@
+position
+container
+background
+borders
+    thickness
+    rounding
+    color
+text
+    position
+    color
+    size
+    weight
+height / width
+margin / padding

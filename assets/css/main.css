@@ -1,4 +1,6 @@
 @import "tailwindcss";
 
+@source "../../index.markdown";
 @source "../../_layouts/**/*.html";
 @source "../../_includes/**/*.html";
+@source "../../_posts/**/*.md";
