@@ -1,0 +1,19 @@
+{
+  "name": "kap-blog-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:build": "tailwindcss -i ./assets/css/main.css -o ./assets/css/dist.css --minify",
+    "tailwind:watch": "tailwindcss -i ./assets/css/main.css -o ./assets/css/dist.css --watch",
+    "dev": "npm run tailwind:build && (npm run tailwind:watch & bundle exec jekyll serve)"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
