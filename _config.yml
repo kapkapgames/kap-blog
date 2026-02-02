@@ -11,8 +11,6 @@ url: "https://kapkapgames.github.io"
 twitter_username: jekyllrb
 github_username:  jekyll
 
-remote_theme: none
-
 plugins:
   - jekyll-feed
 
