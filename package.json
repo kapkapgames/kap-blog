@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./assets/css/main.css -0 ./assets/css/dist.css --minify",
+    "build": "mkdir -p assets/css && npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/dist.css --minify",
     "tailwind:build": "npm run build",
     "tailwind:watch": "tailwindcss -i ./assets/css/main.css -o ./assets/css/dist.css --watch",
     "dev": "npm run tailwind:build && (npm run tailwind:watch & bundle exec jekyll serve)"
