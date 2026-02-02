@@ -1,6 +1,14 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+title: Home
 ---
+
+<section class="py-20 text-center">
+  <h1 class="text-6xl font-black text-white tracking-tighter">
+    KAP<span class="text-cyan-500">_DEVLOG</span>
+  </h1>
+  <p class="text-slate-400 mt-4 text-xl">Documenting the journey of game development.</p>
+</section>
+
+## Latest Devlogs
+Here is what I've been working on lately:

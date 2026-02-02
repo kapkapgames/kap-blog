@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | My Gamedev Blog</title>
+    <link rel="stylesheet" href="{{ '/assets/css/dist.css' | relative_url }}">
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans">
+    <nav class="p-4 border-b border-slate-800 bg-slate-900">
+        <div class="container mx-auto">
+            <a href="/" class="font-bold text-cyan-400">KAP_DEVLOG</a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-8">
+        {{ content }}
+    </main>
+</body>
+
+</html>
