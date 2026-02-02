@@ -18,8 +18,12 @@ include:
   - assets/css/dist.css
 
 exclude:
+  - vendor/
   - node_modules/
   - package.json
   - package-lock.json
+  - Gemfile
+  - Gemfile.lock
   - .github/
-  - jekyll-cache/
+  - .jekyll-cache/
+  - .bundle/
