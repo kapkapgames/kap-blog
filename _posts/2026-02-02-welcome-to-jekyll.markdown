@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "This is a placeholder blog!"
 date:   2026-02-02 20:15:34 +0800
 categories: jekyll update
 ---
