@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: landing
 ---
 
 <h2 class="text-2xl font-bold mb-6">Recent Posts</h2>
