@@ -1,5 +1,6 @@
 position
 container
+    alignment
 background
 borders
     thickness
@@ -10,5 +11,6 @@ text
     color
     size
     weight
+font
 height / width
 margin / padding
