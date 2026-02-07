@@ -11,16 +11,23 @@ hero_image: "assets/images/blue_skies.jpg"
 <hr class="my-8">
 
 <div class="grid grid-cols-1 lg:grid-cols-2 text-amber-100 gap-4">
-    {% for post in site.posts %}
-        <a href="{{ post.url | relative_url }}" class="flex flex-col border-2 border-amber-100 h-100 lg:max-h-100 p-2">
-            <img src="{{ '/assets/images/blue_skies.jpg' | relative_url }}" alt="blog_img" class="object-cover max-h-2/3 w-full">
+    {% for post in site.posts limits:2 %}
+        <a href="{{ post.url | relative_url }}" class="flex flex-col border-2 border-amber-100 h-100 p-2">
+            <img src="{{ '/assets/images/blue_skies.jpg' | relative_url }}" alt="blog_img" class="object-cover h-2/3 w-full">
 
-            <article class="flex flex-col bg-amber-100 text-zinc-900 h-full w-full px-4 py-2">
-                <h3 class="text-2xl font-bold">{{ post.title }}</h3>
+            <article class="flex flex-col bg-amber-100 text-zinc-900 w-full px-4 py-2">
+                <h3 class="text-start text-2xl font-bold line-clamp-1">{{ post.title }}</h3>
+                <p class="text-zinc-500 text-sm mb-5">{{ post.date | date: "%B %d, %Y" }}</p>
                 <p class="line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias obcaecati voluptate quo delectus praesentium nam aut quos suscipit eveniet fugit repellendus fuga officia, debitis perspiciatis voluptas a minus nobis vitae.</p>
             </article>
         </a>
     {% endfor %}
+</div>
+
+<div class="flex justify-center w-full mt-4">
+    <a href="#" class="bg-amber-100 text-center text-zinc-900 text-xl font-bold w-100 p-2">
+        View More
+    </a>
 </div>
 
 <h1 class="text-4xl mt-20">Oddities</h1>
@@ -28,7 +35,7 @@ hero_image: "assets/images/blue_skies.jpg"
 <hr class="my-8">
 
 <div class="grid grid-cols-1 lg:grid-cols-3 text-amber-100 gap-4">
-    {% for post in site.posts %}
+    {% for post in site.posts limits:9 %}
         <a href="{{ post.url | relative_url }}" class="min-h-100 p-4">
             <img src="" alt="blog_img" class="">
         </a>
